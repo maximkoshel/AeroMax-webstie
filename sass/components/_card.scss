@@ -1,0 +1,174 @@
+.card {
+
+    // FUNCTIONALITY
+    perspective: 150rem; // How far the card will flip to the screen
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 52rem;
+    @include respond(tab2) {
+        display: block;
+        margin:10%
+    }
+
+    
+    &__side {
+        height: 52rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-white, .15);
+        width: 90%;
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-primary-yellow, $color-primary-red);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-primary-yellow, $color-primary-red);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-primary-yellow, $color-primary-red);
+            }
+        }
+    }
+  
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 100%;
+        background-blend-mode: cover;
+
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light,0.1), rgba($color-primary-red,0.1)), 
+            url(../img/plan-1.jpg);
+
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light,0.1), rgba($color-primary-red,0.1)), 
+            url(../img/plan-2.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light,0.1), rgba($color-primary-red,0.1)), 
+            url(../img/plan-3.jpg);
+        }
+    }
+
+
+    //Text
+    &__heading {
+        font-size: 2.6rem;
+        font-weight: 350;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-black;
+        position: absolute;
+        bottom: 0;
+        left: 0rem;
+    
+    }
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-gold, 1), 
+            rgba($color-primary-red,1));
+
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-gold, 0.8), 
+            rgba($color-primary-red,1));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-gold, 0.7), 
+            rgba($color-primary-red,1));
+        }
+    }
+
+    &__details {
+        padding: 0.5rem;
+        color: black;
+
+        ul {
+            list-style: none;
+            width: 100%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-black;
+                }
+                &:last-child{
+                    padding-bottom: 3rem;
+                }
+            }
+        }
+    }
+
+    // FRONT SIDE STYLING
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price-box {
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 1rem;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: $color-black;   
+     }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 300;
+        color: $color-black;
+    }
+}

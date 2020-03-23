@@ -1,0 +1,83 @@
+
+.section{
+
+    position: relative;
+    padding: 5% 0;
+    padding-top: 5%;
+    background-image:linear-gradient(to right bottom ,rgba($color-primary-light,0.2),rgba($color-primary-red,0.2) );
+
+&_about{
+
+}
+
+&_plans{
+}
+
+&_book {
+    }
+}
+
+.heading{
+    &_book{
+        &_title{
+            display: inline-block;
+            margin-left: 15%;
+            font-size: 4rem;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.book {
+    background-image: linear-gradient(105deg, 
+                                    rgba($color-white, .8) 45%,
+                                    rgba($color-white, .9) ,
+                                    transparent 60%) ,
+                                    url(../../img/submit.jpg);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    
+    &__form {
+        width: 40%;
+        padding: 6rem;
+        @include respond(tab2) {
+            width: 60%;
+        }
+        @include respond(tab1) {
+            width: 65%;
+        }
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+
+    &_popup{
+        background-image: linear-gradient(105deg, 
+        rgba($color-black, .9) 55%,
+        rgba($color-black, .9),
+        transparent 68%) ,
+        url(../../img/popup-family.jpg);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        border-radius: 0;
+
+    }
+ }
+
+.radio-container{
+    display: block;
+    width: 100%;
+}
+
+.popup_joining{
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: white;
+ 
+}

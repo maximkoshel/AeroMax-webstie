@@ -1,0 +1,49 @@
+.header{
+    height: 95vh;
+    position: relative;
+    background-image:linear-gradient(to right bottom,rgba($color-primary-dark,.9),rgba($color-primary-red, 0.8)),
+     url(../img/header-5.png);
+     background-size: cover;
+     background-position: top;
+    font-family: anurati;
+    font-weight: 100;
+    -webkit-clip-path: circle(100% at 50% 50%);
+    clip-path: circle(100% at 50% 50%);
+    animation-name: openCircle; // Stop the break
+    animation-duration: 6s;
+    backface-visibility: hidden;
+    margin-bottom: 2rem;
+    &__logo-box{
+        position: absolute;
+   
+    }
+    &__logo{
+
+        height: 13rem;
+        opacity: 0.5;
+
+    }
+    &__text-box{
+
+        position: absolute;
+        top: 45%;
+        left:48%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    &__btn{
+        
+        margin-top: 10rem;
+        font-weight: 400;
+        color: black;
+        background-image: linear-gradient(to right bottom ,$color-primary-light, $color-primary-red);
+        &::after{
+            background-image: linear-gradient(to right bottom ,$color-primary-light, $color-primary-red);
+        }
+        &:hover::after{
+            transform: scaleX(10);
+            opacity: 0;
+        }
+ 
+    }
+}

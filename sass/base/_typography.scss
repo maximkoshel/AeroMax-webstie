@@ -1,0 +1,188 @@
+@font-face{
+    font-family:anurati;
+    src: url(/Anurati-Regular.otf) format("opentype");
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 1rem;
+    @include respond(tab1) {
+        padding: 0 !important;
+    }
+
+}
+
+.header__text-box{
+    color : $color-black;
+    font-weight: 300;
+    &--0{
+
+        background-image: linear-gradient(to right bottom ,$color-primary-red,$color-primary-light );
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
+        font-size: 8rem;
+        letter-spacing: 3.5rem;
+        animation-name: moveInRight; // Stop the break
+        animation-duration: 3s;
+        backface-visibility: hidden;
+  
+
+    }
+
+    &--1{
+
+        display: inline-block;
+        font-size: 8rem;
+        letter-spacing: 3.5rem;
+        animation-name: moveInRight; // Stop the break
+        animation-duration: 3s;
+        backface-visibility: hidden;
+
+    }
+    &--2{
+
+        display: inline-block;
+        font-size: 5rem;
+        letter-spacing: 2rem;
+        backface-visibility: hidden; // Stop the break
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+  
+
+    }
+    &--3{
+
+        background-image: linear-gradient(to right bottom ,$color-primary-red, $color-primary-light);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        display: inline-block;
+        font-size: 5rem;
+        letter-spacing: 0.5rem;
+        backface-visibility: hidden; // Stop the break
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+
+
+    }
+}
+h2{
+    display: block;
+    text-align: center;
+    padding: 0 auto;
+    font-size: 6rem;
+    font-weight: 300; 
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to right bottom ,$color-primary-light, $color-primary-red);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-bottom: 1%;
+    font-family: anurati;
+    @include respond(phone) { 
+        margin-left: 0%;
+        transform: translateX(0);
+        font-size: 6rem !important;
+    }   
+}
+h3{
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+    color: $color-primary-red;
+    box-shadow: 0 4px 4px -4px $color-primary-red;
+
+
+    ;
+    } 
+
+    p{
+    font-size: 1.8rem;
+    color: $color-primary-silver;
+    font-weight: 300;
+    }
+
+    .book_popup_textContainer{
+        display: inline-block;
+        width: 50%;
+        margin-left: 4%;
+        @include respond(tab1) {
+            width: 60% !important;
+        }
+        @include respond(phone) {
+            width: 90% !important;
+        }
+        p{
+            color: $color-primary-yellow;
+            margin-bottom: 2rem;
+
+            @include respond(tab2) {
+                font-size: 1.5rem !important;
+            }
+        }
+        h3{
+            font-size: 4rem;
+            font-weight: 400;
+            background-image: linear-gradient(to right bottom ,$color-primary-red, $color-primary-yellow);
+            -webkit-background-clip: text;
+            color: transparent;
+            box-shadow: 0 4px 4px -4px $color-primary-yellow;
+            @include respond(tab2) {
+                font-size: 3rem !important;
+            }
+
+
+        }
+
+    }
+    .popup_joining_popup_title{
+        display: inline-block;
+        font-size: 5rem;
+        background-image: linear-gradient(to right bottom ,$color-primary-red, $color-primary-yellow);
+        -webkit-background-clip: text;
+        color: transparent;
+        box-shadow: 1rem 2rem -2rem white;
+        transform: none;
+        width: 100%;
+        margin-left: 1rem;
+
+        @include respond(tab2) {
+            font-size: 4rem !important;
+        }
+        
+    }
+    .weather{
+        text-align: center;
+        
+        h4{
+            font-size: 8rem;
+            font-weight: 600;
+            background-image: linear-gradient(to right bottom ,$color-primary-yellow, $color-primary-red);
+            -webkit-background-clip: text;
+            color: transparent;    
+        }
+        h4::first-letter{
+            text-transform: uppercase;
+        }
+        h3{
+            background-image: linear-gradient(to right bottom ,$color-primary-yellow, $color-primary-red);
+            -webkit-background-clip: text;
+            color: transparent;    
+            font-size: 2.5rem;
+            font-weight: 700;
+            box-shadow: 0 4px 4px -4px $color-primary-yellow;
+
+            
+        }
+        p{
+            background-image: linear-gradient(to right bottom ,$color-primary-red, $color-primary-yellow);
+            -webkit-background-clip: text;
+            color: transparent;           
+        }
+    }

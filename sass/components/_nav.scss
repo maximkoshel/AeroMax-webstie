@@ -1,0 +1,41 @@
+nav{
+    background-color: $color-black;
+    padding: 1rem;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    @include respond(phone) {
+        display: none;
+    }
+
+
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+nav li{
+    width:25%;
+    display: inline-block;
+    font-size: 2.5rem;
+    @include respond(tab2) {
+        font-size: 2rem ;
+    }
+    @include respond(tab1) {
+        font-size: 1.5rem ;
+    }
+
+}
+nav li a{
+    text-decoration: none;
+    background-image: linear-gradient(to right bottom ,$color-primary-red, $color-primary-yellow);
+    -webkit-background-clip: text;
+    color: transparent;
+    @include respond(tab1) {
+        font-size: 1.5rem ;
+        width: 600%;
+    }
+
+}
