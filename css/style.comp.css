@@ -182,7 +182,7 @@ p {
       width: 90% !important; } }
   .book_popup_textContainer p {
     color: #FFE66D;
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
     @media only screen and (max-width: 75em) {
       .book_popup_textContainer p {
         font-size: 1.5rem !important; } }
@@ -195,7 +195,7 @@ p {
     box-shadow: 0 4px 4px -4px #FFE66D; }
     @media only screen and (max-width: 75em) {
       .book_popup_textContainer h3 {
-        font-size: 3rem !important; } }
+        font-size: 2rem !important; } }
 
 .popup_joining_popup_title {
   display: inline-block;

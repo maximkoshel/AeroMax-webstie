@@ -134,7 +134,7 @@ h3{
         }
         p{
             color: $color-primary-yellow;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
 
             @include respond(tab2) {
                 font-size: 1.5rem !important;
@@ -148,7 +148,7 @@ h3{
             color: transparent;
             box-shadow: 0 4px 4px -4px $color-primary-yellow;
             @include respond(tab2) {
-                font-size: 3rem !important;
+                font-size: 2rem !important;
             }
 
 
