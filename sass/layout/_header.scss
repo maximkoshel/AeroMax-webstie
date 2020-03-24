@@ -32,12 +32,15 @@
         position: absolute;
         top: 45%;
         left:48%;
-        transform: translate(-50%,-50%);
+        transform: translate(-45%,-48%);
         text-align: center;
     }
     &__btn{
         
         margin-top: 10rem;
+        @include respond(phone) {
+            margin-top: 3rem !important;
+        }
         font-weight: 400;
         color: black;
         background-image: linear-gradient(to right bottom ,$color-primary-light, $color-primary-red);
