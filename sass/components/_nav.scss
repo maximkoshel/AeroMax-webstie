@@ -4,9 +4,7 @@ nav{
     position: sticky;
     top:0;
     z-index: 1000;
-    @include respond(phone) {
-        display: none;
-    }
+
 
 
 }
@@ -26,6 +24,7 @@ nav li{
     @include respond(tab1) {
         font-size: 1.5rem ;
     }
+  
 
 }
 nav li a{
@@ -36,6 +35,10 @@ nav li a{
     @include respond(tab1) {
         font-size: 1.5rem ;
         width: 600%;
+    }
+    @include respond(phone) {
+        font-size: 1rem ;
+
     }
 
 }
