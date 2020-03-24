@@ -24,6 +24,9 @@
         background-image: linear-gradient(to right bottom ,$color-primary-red, $color-primary-yellow);
         border-radius: 5px;
         cursor: pointer;
+        @include respond(phone) {
+            font-size: 1rem !important;
+        }
     }
     &_close{
      opacity: 0;

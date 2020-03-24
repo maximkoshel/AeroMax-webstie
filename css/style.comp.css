@@ -186,6 +186,9 @@ p {
     @media only screen and (max-width: 75em) {
       .book_popup_textContainer p {
         font-size: 1.5rem !important; } }
+    @media only screen and (max-width: 37.5em) {
+      .book_popup_textContainer p {
+        font-size: 1rem !important; } }
   .book_popup_textContainer h3 {
     font-size: 4rem;
     font-weight: 400;
@@ -196,6 +199,9 @@ p {
     @media only screen and (max-width: 75em) {
       .book_popup_textContainer h3 {
         font-size: 2rem !important; } }
+    @media only screen and (max-width: 37.5em) {
+      .book_popup_textContainer h3 {
+        font-size: 1.5rem !important; } }
 
 .popup_joining_popup_title {
   display: inline-block;
@@ -210,6 +216,10 @@ p {
   @media only screen and (max-width: 75em) {
     .popup_joining_popup_title {
       font-size: 4rem !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .popup_joining_popup_title {
+      font-size: 2.5rem !important;
+      margin-top: 1rem !important; } }
 
 .weather {
   text-align: center; }
@@ -570,6 +580,9 @@ p {
     background-image: linear-gradient(to right bottom, #FF6B6B, #FFE66D);
     border-radius: 5px;
     cursor: pointer; }
+    @media only screen and (max-width: 37.5em) {
+      .popup_btn {
+        font-size: 1rem !important; } }
   .popup_close {
     opacity: 0;
     visibility: hidden; }
