@@ -30,7 +30,10 @@ body{
         animation-name: moveInRight; // Stop the break
         animation-duration: 3s;
         backface-visibility: hidden;
-  
+        @include respond(phone) {
+            font-size: 6rem;
+
+        }
 
     }
 
@@ -42,7 +45,10 @@ body{
         animation-name: moveInRight; // Stop the break
         animation-duration: 3s;
         backface-visibility: hidden;
+        @include respond(phone) {
+            font-size: 6rem;
 
+        }
     }
     &--2{
 
@@ -52,6 +58,10 @@ body{
         backface-visibility: hidden; // Stop the break
         animation-name: moveInLeft;
         animation-duration: 3s;
+        @include respond(phone) {
+            font-size: 4rem;
+
+        }
   
 
     }

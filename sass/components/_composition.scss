@@ -12,6 +12,10 @@
     &--1{
     margin: 10%;
     border-radius: 5px;
+    @include respond(phone) {
+        margin-top: 0 !important;
+
+    }
 
     }
     }
