@@ -1,4 +1,4 @@
-const apiKey = "MOrUW0sIdnmBJ0B0ZQPyoAqqmy2oFSh6TLF7QLGB";
+const apiKey = "";
 
 const getWeather = async()=>{
     const base = 'https://api.nasa.gov/insight_weather/';
